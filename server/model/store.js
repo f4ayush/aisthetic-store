@@ -3,8 +3,10 @@ const { Schema } = mongoose;
 const storeSchema = new Schema({
     name: String,
     address: String,
+    about:String,
     phone_number: String,
     email: String,
+    imageUrl: String,
     opening_hours: [
       {
         day: String,

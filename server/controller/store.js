@@ -3,8 +3,18 @@ import Store from '../model/store.js';
 export const getAllStores = async (req, res) => {
     try {
         const stores = await Store.find();
+        /* 
+          Basavanagudi Branch
+          Koramangala
+Branch
+Jayanagar
+Bannerghatta
+
+
+        */
         res.json(stores);
     } catch (error) {
+      console.log(error)
         res.status(500).json({ error: 'Error fetching stores' });
     }
 }

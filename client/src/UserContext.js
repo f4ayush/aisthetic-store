@@ -19,9 +19,10 @@ export function UserAuthContextProvider({ children }) {
         firebaseService.auth.onAuthStateChanged(async (user) => {
             if (!user) {
                 setLoading(false);
+                localStorage.setItem("accessToken", "");
                 return setUser("");
             }
-
+            localStorage.setItem("accessToken", user.accessToken);
             setLoading(false);
             return setUser(user);
         });
@@ -29,11 +30,12 @@ export function UserAuthContextProvider({ children }) {
 
     useEffect(() => {
         authStateListener();
+        console.log(user)
     }, [authStateListener]);
 
     return (
         <userAuthContext.Provider
-            value={{ user, loading }}
+            value={{ user, loading, setUser }}
         >
             {children}
         </userAuthContext.Provider>
