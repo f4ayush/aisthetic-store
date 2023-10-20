@@ -53,7 +53,7 @@ const StoreCard: React.FC<StoreProps> = ({ store }) => {
     }, []);
     return (
         
-            <div ref={divRef} className={`self-center flex w-full max-w-[966px] grow flex-col mt-36 max-md:max-w-full ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-40'
+            <div ref={divRef} className={`self-center flex w-full max-w-[966px] grow flex-col mt-5 max-md:max-w-full ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-40'
                 } transform transition-opacity ease-in duration-500 transition-transform`}>
                 <div className="self-stretch max-md:max-w-full">
                     <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">

@@ -44,11 +44,11 @@ function StoreDetails({ storeId }: any) {
 
 
     return (
-        <div className="items-start bg-white flex flex-col">
+        <div className="items-start flex flex-col">
             <div className="self-center w-full max-w-[1089px] mt-28 mb-20 px-5 max-md:max-w-full">
                 <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                     <div className="flex flex-col items-stretch w-[53%] max-md:w-full max-md:ml-0">
-                        <div className="flex-col justify-center items-center overflow-hidden relative flex min-h-[645px] grow px-5 py-10 max-md:max-w-full max-md:mt-12">
+                        <div className="flex-col bg-white bg-opacity-70 justify-center items-center overflow-hidden relative flex min-h-[645px] grow px-5 py-10 max-md:max-w-full max-md:mt-12">
                             <img
                                 loading="lazy"
                                 srcSet={storeData?.imageUrl}

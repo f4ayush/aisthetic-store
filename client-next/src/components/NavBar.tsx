@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
 
     return (
-        <nav className='sticky top-0 flex flex-col md:flex-row justify-center bg-white'>
+        <nav className='sticky top-0 flex flex-col md:flex-row justify-center bg-white px-5 py-2 z-50'>
             <ul className='flex flex-col md:flex-row justify-around w-full md:w-1/2'>
                 <li>
                     <p>
