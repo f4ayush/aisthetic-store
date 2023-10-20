@@ -9,14 +9,15 @@ const storeContext = createContext<any>([]);
 
 export function StoreContextProvider({ children }: any) {
     const [stores, setStores] = useState([])
-    const { user, loading } = useUserAuth();
+    const [error, setError] = useState<any>(null);
+    const { user } = useUserAuth();
     useEffect(() => {
         async function getStores() {
             try {
                 const { data } = await getAllStores();
                 setStores(data)
             } catch (error) {
-               console.log(error)
+                setError(error);
             }
         }
         if (user) {
@@ -27,7 +28,7 @@ export function StoreContextProvider({ children }: any) {
 
     return (
         <storeContext.Provider
-            value={{ stores }}
+            value={{ stores: stores, error: error }}
         >
             {children}
         </storeContext.Provider>

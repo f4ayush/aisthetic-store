@@ -17,7 +17,7 @@ export function UserAuthContextProvider({ children }: any) {
 
 
     function logOut() {
-        return signOut(firebaseService as any);
+        return signOut(firebaseService.auth);
     }
 
     const authStateListener = () => {

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top > .left {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.top > .right {
+  display: flex;
+  flex-grow: 1;
+}
+
+
+.bottom {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.bottom > .left {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.bottom > .right {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}

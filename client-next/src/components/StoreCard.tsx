@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react';
 import Timings from './Timings';
 
-
 interface OpeningHours {
     day: string;
     open_time: string;
@@ -71,7 +70,7 @@ const StoreCard: React.FC<StoreProps> = ({ store }) => {
                     </Link>
                     <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
                         <div className="justify-center items-start self-stretch flex flex-col my-auto max-md:mt-52">
-                            <div className="items-start flex w-[296px] max-w-full flex-col">
+                            <div className="items-start flex max-w-full flex-col">
                                 <div className="justify-center self-stretch text-black text-2xl italic">
                                     {store.name}
                                 </div>
