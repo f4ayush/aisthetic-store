@@ -86,7 +86,7 @@ function StoreDetails({ storeId }: any) {
                                                     </div>
                                                     <img
                                                         loading="lazy"
-                                                        srcSet="..."
+                                                        srcSet="https://img.icons8.com/ios-glyphs/30/expand-arrow--v1.png"
                                                         className="aspect-square object-cover object-center w-6 overflow-hidden shrink-0"
                                                     />
                                                 </div>
