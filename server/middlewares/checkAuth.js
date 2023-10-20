@@ -18,6 +18,8 @@ const checkAuth = async (req, res, next) => {
     admin.auth().verifyIdToken(token).then(decodedIdToken => {
       req.user = decodedIdToken.name;
       next();
+    }).catch((error)=>{
+      return res.status(401).json({ error: 'Unauthorized' });
     })
   } catch (error) {
     console.log(error)
