@@ -48,10 +48,10 @@ function StoreDetails({ storeId }: any) {
 
     return (
         <>
-            <div className="items-start flex flex-col">
-                <div className="self-center w-full max-w-[1089px] mt-2 mb-2 px-5 max-md:max-w-full">
-                    <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                        <div className="flex flex-col items-stretch w-[53%] max-md:w-full max-md:ml-0">
+            <div className="flex flex-col w-full px-5 lg:px-48">
+                <div className="self-center w-full mt-2 mb-2 max-md:max-w-full">
+                    <div className="flex flex-col lg:flex-row max-md:items-stretch max-md:gap-0">
+                        <div className="flex flex-col items-stretch grow max-md:w-full max-md:ml-0">
                             <div className="flex-col bg-white bg-opacity-70 justify-center items-center overflow-hidden relative flex min-h-[645px] grow px-5 py-10 max-md:max-w-full max-md:mt-12">
                                 <img
                                     loading="lazy"
@@ -63,13 +63,13 @@ function StoreDetails({ storeId }: any) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col items-stretch w-[47%] ml-5 max-md:w-full max-md:ml-0">
-                            <div className="items-start flex flex-col my-auto max-md:max-w-full max-md:mt-12">
-                                <div className="items-start flex w-[469px] max-w-full flex-col">
+                        <div className="flex flex-col justify-center grow items-center w-full lg:w-[50%] lg:px-24">
+                            <div className="items-start flex flex-col my-auto max-md:max-w-full max-lg:mt-12">
+                                <div className="items-start flex max-w-full flex-col">
                                     <div className="justify-center text-black text-4xl italic max-w-[425px] max-md:max-w-full">
                                         {storeData?.name}
                                     </div>
-                                    <div className="justify-center text-black text-base font-extralight mt-4 max-md:max-w-full">
+                                    <div className="justify-center text-black text-base font-extralight mt-4 max-w-full">
                                         {storeData?.about}
                                     </div>
                                 </div>

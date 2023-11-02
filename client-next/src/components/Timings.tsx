@@ -72,7 +72,7 @@ const Timings: React.FC<TimingsComponentProps> = ({ timings }) => {
 
 
     return (
-        <div>
+        <div className="flex flex-col justify-center items-center">
             <div className="flex">
                 <span className="text-black text-base">{storeStatus.message}</span>
                 {

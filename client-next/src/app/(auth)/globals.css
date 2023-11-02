@@ -10,16 +10,16 @@ body {
   padding: 0px;
 }
 
-.top {
+/* .top {
   display: flex;
   justify-content: space-around;
-}
+} */
 
-.top > .left {
+/* .top > .left {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-}
+} */
 
 .top > .right {
   display: flex;
@@ -27,7 +27,7 @@ body {
 }
 
 
-.bottom {
+/* .bottom {
   display: flex;
   position: sticky;
   top: 0px;
@@ -35,16 +35,16 @@ body {
   background-color: white;
   height: 60px;
   margin-top: 10px;
-}
+} */
 
-.bottom > .left {
+/* .bottom > .left {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-}
+} */
 
 .bottom > .right {
   display: flex;
   flex-grow: 1;
-  justify-content: space-around;
+  justify-content: flex-end;
 }

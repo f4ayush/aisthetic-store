@@ -28,8 +28,8 @@ export default function HomeComponent() {
     }
 
     return (
-        <div className="items-start flex flex-col px-5">
-            <div className="self-center flex w-full max-w-[1090px] flex-col mb-2 max-md:max-w-full">
+        <div className="items-start flex flex-col px-5 lg:px-48 overflow-hidden">
+            <div className="self-center flex w-full flex-col mb-2 max-lg:max-w-full">
                 {
                     stores.map((store: any, index: number) => (
                         <StoreCard key={index} store={store} />

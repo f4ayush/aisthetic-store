@@ -52,11 +52,11 @@ const StoreCard: React.FC<StoreProps> = ({ store }) => {
     }, []);
     return (
 
-        <div ref={divRef} className={`self-center flex w-full max-w-[966px] grow flex-col mt-5 max-md:max-w-full ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-40'
+        <div ref={divRef} className={`self-center flex w-full grow flex-col mt-5 max-md:max-w-full ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-40'
             } transform transition-opacity ease-in duration-500 transition-transform`}>
-            <div className="self-stretch max-md:max-w-full">
-                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                    <Link href={`store-details/${store._id}`} className="flex flex-col items-stretch w-[66%] max-md:w-full max-md:ml-0">
+            <div className="self-stretch">
+                <div className="flex max-lg:flex-col max-lg:items-stretch">
+                    <Link href={`store-details/${store._id}`} className="flex flex-col items-stretch flex-grow max-md:w-full">
                         <div className="flex-col justify-center bg-white bg-opacity-80 items-center overflow-hidden relative flex min-h-[645px] grow px-5 py-10 max-md:max-w-full max-md:mt-12">
                             <img
                                 loading="lazy"
@@ -68,8 +68,8 @@ const StoreCard: React.FC<StoreProps> = ({ store }) => {
                             </div>
                         </div>
                     </Link>
-                    <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
-                        <div className="justify-center items-start self-stretch flex flex-col my-auto max-md:mt-52">
+                    <div className="flex flex-col items-stretch flex-grow max-md:w-full">
+                        <div className="justify-center items-start lg:items-center self-stretch flex flex-col my-auto max-lg:mt-5">
                             <div className="items-start flex max-w-full flex-col">
                                 <div className="justify-center self-stretch text-black text-2xl italic">
                                     {store.name}

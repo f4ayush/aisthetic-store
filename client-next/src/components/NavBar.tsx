@@ -10,8 +10,8 @@ function Navbar() {
 
     return (
         <>
-            <div className="top" style={{ display: pathname.includes('store-details') ? 'none' : 'flex' }}>
-                <div className="left">
+            <div className="top flex justify-around px-48" style={{ display: pathname.includes('store-details') ? 'none' : 'flex' }}>
+                <div className="left flex flex-grow gap-24">
                     <p>Call Us:</p>
                     <p>
                         Write to us
@@ -21,8 +21,8 @@ function Navbar() {
                     <div />
                 </div>
             </div>
-            <div className="bottom">
-                <div className="left" style={{ display: pathname.includes('store-details') ? 'none' : 'flex' }}>
+            <div className="bottom px-48 flex sticky top-0 z-10 bg-white h-[60px] mt-2">
+                <div className="left flex flex-grow gap-24" style={{ display: pathname.includes('store-details') ? 'none' : 'flex' }}>
                     <p>
                         +123456778
                     </p>
