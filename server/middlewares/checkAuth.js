@@ -1,5 +1,6 @@
 // import jwt from 'jsonwebtoken';
-
+import dotenv from "dotenv"
+dotenv.config()
 import admin from "firebase-admin";
 import serviceAccount from "../firebase-admin-sdk.js";
 
